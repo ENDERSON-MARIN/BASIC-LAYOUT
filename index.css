@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+:root {
+  --color-bg-dark: #1e1d27;
+  --color-bg-gray: rgba(240, 240, 246, 0.599);
+  --color-bg-cards: rgb(78, 92, 101, 0.125);
+  --color-white: #fff;
+  --black-opacity: rgba(0, 0, 0, 0.5);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  width: 25vw;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: var(--color-bg-dark);
+  color: white;
+  padding: 20px;
+}
+.logo {
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.cards-sidebar-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--color-bg-cards);
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.cards-sidebar-hour {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--color-bg-cards);
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+.cards-sidebar-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5vh;
+  background-color: var(--color-bg-cards);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+.cards-sidebar-files {
+  height: 30vh;
+  background-color: var(--color-bg-cards);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 75px;
+}
+
+.cards-sidebar-files-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh;
+}
+.title-files {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.cards-sidebar-close {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 7.5vh;
+  background-color: var(--color-bg-cards);
+  border-radius: 10px;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+/* CONTENT */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+  grid-auto-rows: 400px;
+  left: 25vw;
+  position: fixed;
+  height: 100%;
+  background: var(--color-bg-gray);
+}
+
+.hero-image {
+  margin-top: 115px;
+  margin-right: 20px;
+  margin-left: 20px;
+  height: 270px;
+  background-image: var(--image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  border-radius: 5px;
+}
+
+.hero-image-opacity {
+  width: 100%;
+  min-height: 100%;
+  background-color: var(--black-opacity);
+  border-radius: 5px;
+}
+
+.hero-image-logo {
+  width: 130px;
+  height: 80px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+
+.hero-image-title {
+  color: var(--color-bg-gray);
+  margin-left: 25px;
+}
+.hero-image-description {
+  color: var(--color-white);
+  margin-left: 25px;
+}
+
+.details-cards {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.power-card {
+  height: 48vh;
+  width: 47%;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: -1px 0px 17px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 5px;
+  padding: 20px;
+}
+
+.identificacion {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.reunion-card {
+  height: 48vh;
+  width: 47%;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  box-shadow: -1px 0px 17px 0px rgba(0, 0, 0, 0.3);
+  margin-right: 20px;
+  text-align: center;
+}
+
+.card-title {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  color: gray;
+  font-size: 1rem;
+}
+
+.card-time {
+  color: #1e1d27;
+  text-align: center;
+  width: 100%;
+  word-spacing: 15px;
+  font-size: 2rem;
+}
+
+.card-time-text {
+  color: gray;
+  word-spacing: 35px;
+  font-size: 0.9rem;
+}
+
+progress {
+  width: 90%;
+  height: 0.3rem;
+  margin-top: 80px;
+}
+
+progress::-webkit-progress-bar {
+  background-color: gray;
+}
+
+progress::-webkit-progress-value {
+  background-color: green;
+}
+
+progress::-moz-progress-bar {
+  background-color: green;
+}
+
+.quorum {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin-bottom: 60px;
+}
+
+.btn {
+  border-radius: 5px;
+  border: solid 1px black;
+  padding: 6px;
+  width: 90%;
+  background-color: #fff;
+}
+
+.rightbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25vw, 1fr));
+  left: 75vw;
+  position: fixed;
+  height: 100%;
+  background-color: var(--color-white);
+}
+
+.hero-image-title2 {
+  color: var(--color-white);
+  margin-left: 15px;
+  margin-top: 22vh;
+}
+.hero-image-description2 {
+  color: gray;
+  margin-left: 15px;
+}
+
+.details-cards2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+.next-reuniones {
+  height: 48vh;
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.reuniones-details {
+  display: flex;
+}
+
+.img-reuniones {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.date-details {
+  display: flex;
+  justify-content: space-between;
+}
